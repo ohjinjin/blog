@@ -9,3 +9,6 @@ class Blog(models.Model):
     # 제목 변경 래퍼함수
     def __str__(self):
         return self.title
+
+    def summary(self):
+        return self.body[:100]
